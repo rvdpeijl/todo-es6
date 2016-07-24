@@ -1,0 +1,33 @@
+#toolbar {
+	padding: .5em 2.5em;
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.toolbar__section--left {
+		float: left;
+		width: auto;
+	}
+
+	.toolbar__section--center {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.toolbar__section--right {
+		float: right;
+	}
+
+	span.items-left {
+		color: #a59d96;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		display: inline-block;
+		padding: 0.3em;
+		font-weight: 600;
+	}
+}

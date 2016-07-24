@@ -1,0 +1,70 @@
+#new-todo__container {
+	background-color: @base;
+
+	.new-todo__form {
+		text-align: center;
+		position: relative;
+	}
+
+	#new-todo__input {
+		background-color: transparent;
+		border: none;
+		color: #fff;
+		font-size: 2.3em;
+		font-weight: 500;
+		margin-top: 0;
+		outline: none;
+		margin: .3em;
+		text-align: center;
+		width: 290px;
+
+		&::-webkit-input-placeholder {
+		   color: #fff;
+		}
+
+		&:-moz-placeholder {
+		   color: #fff;
+		}
+
+		&::-moz-placeholder {  /* Firefox 19+ */
+		   color: #fff;
+		}
+
+		&:-ms-input-placeholder {
+		   color: #fff;
+		}
+
+		&:focus {
+			&::-webkit-input-placeholder {
+			   color: transparent;
+			}
+
+			&:-moz-placeholder { /* Firefox 18- */
+			   color: transparent;
+			}
+
+			&::-moz-placeholder {  /* Firefox 19+ */
+			   color: transparent;
+			}
+
+			&:-ms-input-placeholder {
+			   color: transparent;
+			}
+		}
+	}
+
+	.new-todo__button {
+		position: absolute;
+    	right: 2.5em;
+    	top: 1em;
+
+    	background-color: #fff;
+    	color: @base;
+
+    	font-size: 1em;
+    	text-transform: uppercase;
+    	border: 0;
+    	outline: 0;
+    	padding: .5em 1em;
+	}
+}
