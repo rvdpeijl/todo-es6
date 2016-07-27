@@ -10,14 +10,17 @@ class ToolbarController extends BaseController {
 
 		return `
 			<div id="toolbar">
-				<div class="toolbar__section--left">
+				<div class="toolbar__section toolbar__section--left">
 					<div class="button button--default complete-all">Complete all</div>
 				</div>
-				<div class="toolbar__section--right">
+				<div class="toolbar__section toolbar__section--right">
 					<div class="button button--default clear-completed">Clear completed</div>
 				</div>
-				<div class="toolbar__section--center">
+				<div class="toolbar__section toolbar__section--center items-left--large">
 					<span class="items-left">${itemsLeft} todo items left (out of ${this.list.todos.length})</span>
+				</div>
+				<div class="toolbar__section toolbar__section--center items-left--compact">
+					<span class="items-left">${itemsLeft} / ${this.list.todos.length}</span>
 				</div>
 			</div>
 		`

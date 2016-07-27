@@ -22,6 +22,10 @@
 		float: right;
 	}
 
+	.items-left--compact {
+		display: none;
+	}
+
 	span.items-left {
 		color: #a59d96;
 		text-transform: uppercase;
@@ -29,5 +33,36 @@
 		display: inline-block;
 		padding: 0.3em;
 		font-weight: 600;
+	}
+
+	@media @landscape-phone {
+
+		.items-left--large {
+			display: none;
+		}
+
+		.items-left--compact {
+			display: block;
+		}
+
+		.toolbar__section {
+			// display: block;
+			// width: 100%;
+
+			&:not(:last-of-type) {
+				margin-bottom: .5em;
+			}
+		}
+
+		.button {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	@media @portrait-phone {
+		.toolbar__section {
+			width: 100%;
+		}
 	}
 }

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server --hot --inline --content-base build/",
+    "serve": "webpack-dev-server --hot --inline --content-base build/ --host 192.168.0.113",
     "watch": "webpack --watch"
   },
   "author": "",
