@@ -9,7 +9,8 @@
 #### Step 3
 	npm run serve
 
-And if you want to develop as well:
+	// and if you want to develop as well:
+
 	npm run watch
 
 #### Step 4
