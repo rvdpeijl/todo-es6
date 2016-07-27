@@ -3,10 +3,6 @@ class BaseController {
 		this.el = options.element
 		this.initialize(options)
 		this.render()
-
-		if (typeof this.events === "function") {
-			this.addEvents()
-		}
 	}
 
 	initialize() {}

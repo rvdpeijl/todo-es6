@@ -10,6 +10,7 @@ class TodoController extends BaseController {
 							<li class="todo-list__item ${todo.completed ? 'todo-list__item--completed' : ''}">
 								<div class="todo-list__checkbox" data-id=${todo._id}></div>
 								<span class="todo-list__text">${todo.todo}</span>
+								<div class="todo-list__remove" data-id=${todo._id}></div>
 							</li>
 						`
 					}).join("\n")
@@ -28,7 +29,7 @@ class TodoController extends BaseController {
 
 	events() {
 		return {
-			// "click .todo": this.removeTodo,
+			"click .todo-list__remove":   this.removeTodo,
 			"click .todo-list__checkbox": this.toggleComplete
 		}
 	}

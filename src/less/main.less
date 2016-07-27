@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
 
+@import 'variables.less';
+
+@import 'components/logo.less';
+@import 'components/todo-list.less';
+@import 'components/new-todo.less';
+@import 'components/toolbar.less';
+@import 'components/footer.less';
+
 html {
 	box-sizing: border-box;
 }
@@ -12,21 +20,29 @@ html {
 	padding: 0;
 }
 
+html, body, #root {
+	height: 100%;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 }
 
-@import 'variables.less';
+#sections__container {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto @footer-height-negative; // -(@footer-height) does not work for some reason :/
+}
 
-@import 'components/logo.less';
-@import 'components/todo-list.less';
-@import 'components/new-todo.less';
-@import 'components/toolbar.less';
+.push {
+	height: @footer-height;
+}
 
 .button {
 	display: inline-block;
-	padding: .5em 1em;
+	padding: .3em .7em;
 
 	text-transform: uppercase;
 

@@ -9,12 +9,16 @@ import TodoCollection from "js/collections/TodoCollection"
 class MainController extends BaseController {
 	template() {
 		return `
-			<div>
-				<div id="logo"><img src="/img/digitas-lbi-logo.png"></div>
-				<div id="new-todo__container"></div>
-				<div id="toolbar__container"></div>
-				<div id="todo-list__container"></div>
+			<div id="sections__container">
+				<section id="logo"><img src="/img/digitas-lbi-logo.png"></section>
+				<section id="new-todo__container"></section>
+				<section id="toolbar__container"></section>
+				<section id="todo-list__container"></section>
+				<div class="push"></div>
 			</div>
+			<footer>
+				<img class="footer__logo" src="/img/digitas-lbi-logotype.jpg">
+			</footer>
 		`
 	}
 
